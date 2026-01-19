@@ -24,18 +24,3 @@ Gemini가 실시간으로 생성한 이미지와 실제 작품(또는 사진)을
 
 - `.env.local`에 `GEMINI_API_KEY`를 설정하면 기본값으로 사용할 수 있습니다.
 - `Pro` 모델은 더 높은 화질/정밀도를 사용하므로 생성 시간이 늘어날 수 있습니다.
-
-## GitHub Pages 배포
-
-이 프로젝트는 GitHub Actions로 빌드 후 GitHub Pages에 자동 배포하도록 설정되어 있습니다.
-배포된 페이지를 사용하는 사용자는 우측 상단 `API Key`에서 각자 Gemini API 키를 입력해야 합니다.
-
-1. 이 저장소를 `main` 브랜치로 푸시합니다.
-2. GitHub 저장소 설정에서 Pages 소스를 **GitHub Actions**로 선택합니다.
-3. 배포 완료 후 다음 주소에서 접근합니다:
-   `https://{username}.github.io/{repo}/`
-
-### 배포 동작 방식
-
-- `VITE_BASE`를 `/{repo}/`로 설정하여 Pages 하위 경로에서도 자산이 올바르게 로드됩니다.
-- 빌드 결과물은 `dist` 폴더이며, Actions가 이를 Pages로 배포합니다.
